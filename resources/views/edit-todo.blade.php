@@ -27,7 +27,6 @@
                 @foreach($cats as $cat)
                 <option value="{{ $cat->id }}" @if($cat->id == $todos->id) selected @endif>{{ $cat->title }}</option>
                 @endforeach
-                @endif
             </select>
         </div>
         <div class="form-group m-3">
