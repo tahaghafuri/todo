@@ -18,7 +18,7 @@
             <label for="description">Todo Category</label>
             <select name="catid" class="form-select">
                 @foreach($cats as $cat)
-                <option value="{{ $cat['id'] }}" @if($cat == $todos['id']) selected @endif>{{ $cat['title'] }}</option>
+                <option value="{{ $cat->id }}" @if($cat == $todos['id']) selected @endif>{{ $cat['title'] }}</option>
                 @endforeach
                 @endif
             </select>
