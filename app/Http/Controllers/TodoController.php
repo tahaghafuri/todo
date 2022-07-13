@@ -17,8 +17,7 @@ class TodoController extends Controller
     }
 
     public function details(Todo $todo){
-        $cat = Cat::all();
-        return view('details-todo')->with(['todos','cats'], [$todo,$cat]);
+        return view('details-todo')->with('todos', $todo);
     }
 
     public function edit(Todo $todo){
