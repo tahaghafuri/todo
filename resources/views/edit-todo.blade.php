@@ -15,7 +15,7 @@
         @csrf
         <div class="form-group m-3">
             <label for="name">Todo Name</label>
-            <input type="text" class="form-control" value="{{$todos->name}}" name="name">
+            <input type="text" class="form-control" value="{{$todos->title}}" name="name">
         </div>
         <div class="form-group m-3">
             <label for="description">Todo Description</label>
