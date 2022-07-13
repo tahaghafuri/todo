@@ -53,6 +53,7 @@ class TodoController extends Controller
         $cat = Cat::all();
         return view('create-todo')->with('todos', $cat);
     }
+    
     public function store(Request $request){
 
         $request->validate([
