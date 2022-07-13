@@ -4,6 +4,11 @@
     Todo Details
 @endsection
 
+@section('menu')
+<a href="/todo"><span class="navbar-brand mb-0 h1">Todo</span></a>
+<a href="/todo/create"><span class="btn btn-primary">Create Todo</span></a>
+@endsection
+
 @section('content')
 
     <div class="card text-center mt-5">

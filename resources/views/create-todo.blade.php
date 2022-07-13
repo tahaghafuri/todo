@@ -4,6 +4,11 @@
     Create Todo
 @endsection
 
+@section('menu')
+<a href="/todo"><span class="navbar-brand mb-0 h1">Todo</span></a>
+<a href="/todo/create"><span class="btn btn-primary">Create Todo</span></a>
+@endsection
+
 @section('content')
 
     <form action="{{route('todo.store')}}" method="post" class="mt-4 p-4">

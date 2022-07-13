@@ -2,6 +2,10 @@
 @section('title')
     Home
 @endsection
+@section('menu')
+<a href="/todo"><span class="navbar-brand mb-0 h1">Todo</span></a>
+<a href="/cat"><span class="navbar-brand mb-0 h1">Cat</span></a>
+@endsection
 @section('content')
 
     <div class="row mt-3">

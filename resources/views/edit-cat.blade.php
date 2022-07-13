@@ -1,7 +1,14 @@
 @extends('layouts.base')
+
 @section('title')
     Cat Edit
 @endsection
+
+@section('menu')
+<a href="/cat"><span class="navbar-brand mb-0 h1">Cat</span></a>
+<a href="/cat/create"><span class="btn btn-primary">Create Cat</span></a>
+@endsection
+
 @section('content')
 
     <form action="/cat/update/{{$cats->id}}" method="post" class="mt-4 p-4">

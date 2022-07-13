@@ -4,6 +4,11 @@
     Create Category
 @endsection
 
+@section('menu')
+<a href="/cat"><span class="navbar-brand mb-0 h1">Cat</span></a>
+<a href="/cat/create"><span class="btn btn-primary">Create Cat</span></a>
+@endsection
+
 @section('content')
 
     <form action="{{route('cat.store')}}" method="post" class="mt-4 p-4">

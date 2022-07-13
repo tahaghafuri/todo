@@ -1,7 +1,14 @@
 @extends('layouts.app')
+
 @section('title')
     Cat List
 @endsection
+
+@section('menu')
+<a href="/"><span class="navbar-brand mb-0 h1">Home</span></a>
+<a href="/cat/create"><span class="btn btn-primary">Create Cat</span></a>
+@endsection
+
 @section('content')
 
     <div class="row mt-3">
