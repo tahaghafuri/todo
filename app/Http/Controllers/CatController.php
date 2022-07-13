@@ -61,8 +61,7 @@ class CatController extends Controller
 
         $request->validate([
             'name' => ['required'],
-            'description' => ['required'],
-            'catid' => ['required']
+            'description' => ['required']
         ]);
 
         $cat = new Cat();
