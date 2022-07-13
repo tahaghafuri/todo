@@ -64,7 +64,7 @@ class TodoController extends Controller
 
         $todo = new Todo();
         
-        $todo->name = $request->input('name');
+        $todo->title = $request->input('name');
         $todo->description = $request->input('description');
         $todo->cat_id = $request->input('catid');
         $todo->save();

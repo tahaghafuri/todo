@@ -66,7 +66,7 @@ class CatController extends Controller
 
         $cat = new Cat();
         
-        $cat->name = $request->input('name');
+        $cat->title = $request->input('name');
         $cat->description = $request->input('description');
         $cat->save();
 
