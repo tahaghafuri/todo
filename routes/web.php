@@ -23,6 +23,8 @@ Route::get('/', function(){
 
 Route::get('/cat', [CatController::class, 'index']);
 
+Route::get('/cat/create', [CatController::class, 'create']);
+
 Route::post('/cat/store-data', [CatController::class, 'store'])->name('cat.store');
 
 Route::get('/cat/details/{cat}', [CatController::class, 'details']);
@@ -34,6 +36,8 @@ Route::post('/cat/update/{cat}', [CatController::class, 'update']);
 Route::get('/cat/delete/{cat}', [CatController::class, 'delete']);
 
 Route::get('/todo', [TodoController::class, 'index']);
+
+Route::get('/todo/create', [TodoController::class, 'create']);
 
 Route::post('/todo/store-data', [TodoController::class, 'store'])->name('todo.store');
 
