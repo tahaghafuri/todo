@@ -31,7 +31,7 @@ class CatController extends Controller
             'description' => ['required']
         ]);
         
-        $cat->name = $request->input('name');
+        $cat->title = $request->input('name');
         $cat->description = $request->input('description');
         $cat->save();
 
