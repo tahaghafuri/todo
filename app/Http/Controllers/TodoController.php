@@ -22,7 +22,7 @@ class TodoController extends Controller
 
     public function edit(Todo $todo){
         $cat = Cat::all();
-        return view('edit-todo')->with(['todos','cats'], [$todo,$cat]);
+        return view('edit-todo')->with('todos', $todo,)->with('cats',$cat);
     }
     
     public function update(Request $request,Todo $todo){
