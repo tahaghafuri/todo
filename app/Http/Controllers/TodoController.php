@@ -22,7 +22,7 @@ class TodoController extends Controller
 
     public function edit(Todo $todo){
         $cat = Cat::all();
-        return view('edit-todo')->with('todos', $todo,)->with('cats',$cat);
+        return view('edit-todo')->with('todos', $todo)->with('cats',$cat);
     }
     
     public function update(Request $request,Todo $todo){
@@ -50,7 +50,7 @@ class TodoController extends Controller
 
     public function create(){
         $cat = Cat::all();
-        return view('create-todo')->with('todos', $cat);
+        return view('create-todo')->with('cats', $cat);
     }
     
     public function store(Request $request){
