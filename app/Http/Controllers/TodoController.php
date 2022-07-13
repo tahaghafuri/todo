@@ -10,6 +10,7 @@ use App\Models\Todo;
 
 class TodoController extends Controller
 {
+    
     public function index(){
         $todo = Todo::all();
         return view('index-todo')->with('todos', $todo);
