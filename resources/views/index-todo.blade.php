@@ -15,7 +15,7 @@
         <div class="col-12 align-self-center">
             <ul class="list-group">
                 @foreach($todos as $todo)
-                    <li class="list-group-item"><a href="/todo/details/{{$todo->id}}" style="color: cornflowerblue">{{$todo->name}}</a></li>
+                    <li class="list-group-item"><a href="/todo/details/{{$todo->id}}" style="color: cornflowerblue">{{$todo->title}}</a></li>
                 @endforeach
             </ul>
         </div>
