@@ -17,7 +17,9 @@ use App\Http\Controllers\CatController;
 |
 */
 
-Route::get('/', 'home');
+Route::get('/', function(){
+    return view('home');
+});
 
 Route::get('/cat', [CatController::class, 'index']);
 
