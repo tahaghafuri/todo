@@ -35,13 +35,15 @@
 <div class="container">
 
 @if(session()->has('success'))
+<br>
     <div class="alert alert-success">
 
         {{ session()->get('success') }}
 
     </div>
-@else
-    <div class="alert alert-error">
+@elseif(session()->has('error'))
+<br>
+    <div class="alert alert-warning">
 
         {{ session()->get('error') }}
 
