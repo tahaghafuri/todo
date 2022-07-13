@@ -17,11 +17,8 @@
         <div class="form-group m-3">
             <label for="description">Todo Category</label>
             <select name="catid" class="form-select">
-                @if(empty($cats))
-                <option selected>Please Select The Category For Your Todo</option>
-                @else
                 @foreach($cats as $cat)
-                <option value="{{ $cat['id'] }}">{{ $cat['title'] }}</option>
+                <option value="{{ $cat['id'] }}" @if($cat == $todos['id']) selected @endif>{{ $cat['title'] }}</option>
                 @endforeach
                 @endif
             </select>
