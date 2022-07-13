@@ -15,7 +15,7 @@
         @csrf
         <div class="form-group m-3">
             <label for="name">Cat Name</label>
-            <input type="text" class="form-control" value="{{$cats->name}}" name="name">
+            <input type="text" class="form-control" value="{{$cats->title}}" name="name">
         </div>
         <div class="form-group m-3">
             <label for="description">Cat Description</label>
