@@ -40,6 +40,12 @@
         {{ session()->get('success') }}
 
     </div>
+@else
+    <div class="alert alert-error">
+
+        {{ session()->get('error') }}
+
+    </div>
 @endif
 
     @yield('content')
