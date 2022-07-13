@@ -56,7 +56,7 @@ class CatController extends Controller
         $cat = Cat::all();
         return view('create-cat')->with('cats', $cat);
     }
-    
+
     public function store(Request $request){
 
         $request->validate([
@@ -73,7 +73,7 @@ class CatController extends Controller
 
         session()->flash('success', 'Cat created succesfully');
 
-        return redirect('/todo');
+        return redirect('/cat');
     }
 
 }
