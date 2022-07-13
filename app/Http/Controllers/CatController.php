@@ -41,8 +41,8 @@ class CatController extends Controller
     }
     
     public function delete(Cat $cat){
-        $todo = Todo::query()->where('cat_id',$cat->id);
-        if(empty($todo)){
+        $todo = Todo::all()->where('cat_id',$cat->id);
+        if(!$todo){
             $cat->delete();
             return redirect('/cat');
         }else{
